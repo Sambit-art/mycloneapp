@@ -5,6 +5,7 @@ const port= 8000
 
 
 app.use(cors())
+app.use(express.static('public'))
 app.get('/', (req, res) => {
     console.log("request");
     res.json([
